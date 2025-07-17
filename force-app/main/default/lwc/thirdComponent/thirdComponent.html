@@ -1,0 +1,11 @@
+<!-- Conditional rendering -->
+<template>
+    <template if:true={isVisible}>
+        <p>this content is visible part - 1</p>
+    </template>
+    <template if:false={isVisible}>
+        <p>this content is visible part - 2</p>
+    </template>
+
+    <lightning-button label="Toggle" onclick={handler}></lightning-button>
+</template>

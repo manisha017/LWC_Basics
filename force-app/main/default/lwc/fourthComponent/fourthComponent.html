@@ -1,0 +1,19 @@
+
+<!-- Conditional rendering with multiple conditions -->
+<template>
+    <template if:true={isAdmin}>
+       <p>Welcome, Admin!!</p>  
+    </template>
+
+    <template if:true={isManager}>
+        Welcome Manager
+    </template>
+
+    <template if:true={isUser}>
+        <p>Welcome, user!!</p>
+    </template>
+  
+    <template if:true={isGuest}>
+        Welcome Guest
+    </template>
+</template>

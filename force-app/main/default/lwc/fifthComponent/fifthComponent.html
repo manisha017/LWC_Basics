@@ -1,0 +1,13 @@
+<!-- Getter and setter methods in lwc -->
+<template>
+    <lightning-button label="set admin true" onclick={setAdminTrue}></lightning-button>
+    <lightning-button label="set admin false" onclick={setAdminFalse}></lightning-button>
+
+    <template if:true={isAdmin}>
+        <p>Welcome, Admin!!</p>
+    </template>
+    
+    <template if:false={isAdmin}>
+        <p>Welcome, user!!</p>
+    </template>
+</template>
