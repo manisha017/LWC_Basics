@@ -5,5 +5,6 @@ export default class ThirdComponent extends LightningElement {
 
     handler() {
         this.isVisible = !this.isVisible;
+    console.log('Button clicked');
     }
 }
